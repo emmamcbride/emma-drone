@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/question1">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading">
+              Register a new drone
+            </h1>
+          </legend>
+
+          <br>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="drone-make">
+              Drone make
+            </label>
+            <span id="event-name-hint" class="govuk-hint">
+              This is the manufacturer name, i.e. Holy Stone.
+            </span>
+            <input class="govuk-input" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+          </div>
+<br>
+<br>
+<a href="register0"
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+</a>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/question0">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+            <h1 class="govuk-fieldset__heading">
+              What would you like to do?
+            </h1>
+          </legend>
+          <span id="what-would-you-like-to-do-conditional-hint" class="govuk-hint">
+                Select one option.
+              </span>
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="what-would-you-like-to-do" name="what-would-you-like-to-do" type="radio" value="register">
+              <label class="govuk-label govuk-radios__label" for="what-would-you-like-to-do">
+                Register a new drone
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="what-would-you-like-to-do-2" name="what-would-you-like-to-do" type="radio" value="renew">
+              <label class="govuk-label govuk-radios__label" for="what-would-you-like-to-do-2">
+                Renew a current drone licence
+              </label>
+            </div>
+            <div class="govuk-radios__divider">or</div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="what-would-you-like-to-do-6" name="what-would-you-like-to-do" type="radio" value="review">
+              <label class="govuk-label govuk-radios__label" for="what-would-you-like-to-do-6">
+                Review and update existing held drone licences
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+
+    </div>
+  </div>
+
+{% endblock %}
