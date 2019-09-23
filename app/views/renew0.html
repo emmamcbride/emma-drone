@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/question">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Renewal details</h1>
+
+      <p>Review the details details below, and make any updates <strong>before</strong> renewing. Changes to personal licence holder details need to be done through the <a href="#">personal drone licencing service</a>.</p>
+
+      <dl class="govuk-summary-list">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Name
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Sarah Philips
+    </dd>
+
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Drone make
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Holy Stone
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Drone model
+    </dt>
+    <dd class="govuk-summary-list__value">
+      HS100
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Storage address
+    </dt>
+    <dd class="govuk-summary-list__value">
+      78 College Road<br>London<br>E1 5JL
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change<span class="govuk-visually-hidden"> contact details</span>
+      </a>
+    </dd>
+  </div>
+</dl>
+
+<a href="/question1">
+        <button class="govuk-button" data-module="govuk-button">Renew</button>
+</a>
+
+    </div>
+  </div>
+
+{% endblock %}
